@@ -90,7 +90,7 @@ function clickReplayButton() {
 
 function startClicks(numberOfGames) {
   totalGames = numberOfGames;
-  intervalId = setInterval(clickTiles, 350);
+  intervalId = setInterval(clickTiles, scanTileMs);
   console.log("Авто-кликер запущен.");
 
   intervalReplay = setInterval(clickReplayButton, 10000);
